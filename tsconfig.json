@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "outDir": "lib",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "moduleResolution": "nodenext",
+    "allowJs": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@/test": ["test/*"],
+      "@/*": ["libs/*"]
+    },
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["libs", "test"]
+}
