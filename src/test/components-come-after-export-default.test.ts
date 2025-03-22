@@ -13,7 +13,6 @@ ruleTester.run(
 export default function Component() {
   return <h1>test</h1>;
 }
-
 function Header() {
   return <h1>test</h1>;
 }
@@ -29,7 +28,7 @@ console.log("Some logic");
       {
         code: `
 type ComponentProps = {
-  name: string;
+  name: string
 }
 export default function Component(props:ComponentProps) {
   return <h1>test</h1>;
@@ -74,6 +73,9 @@ function Footer() {
 }
 `,
         errors: [
+          {
+            messageId: "misplacedComponent",
+          },
           {
             messageId: "misplacedComponent",
           },

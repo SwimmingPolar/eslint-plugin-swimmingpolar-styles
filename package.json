@@ -36,6 +36,10 @@
     "vitest": "^3.0.9"
   },
   "dependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.26.10",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
     "@typescript-eslint/utils": "^8.26.1"
   }
 }

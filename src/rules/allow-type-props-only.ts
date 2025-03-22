@@ -35,8 +35,6 @@ export default createRule({
 
         const expectedTypeName = getExpectedTypeName(context);
 
-        console.log(expectedTypeName);
-        console.log(lastTypeNode.id.name);
         if (lastTypeNode.id.name !== expectedTypeName) {
           context.report({
             node: lastTypeNode,
