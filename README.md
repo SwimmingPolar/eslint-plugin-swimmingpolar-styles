@@ -4,7 +4,7 @@ Make sure one rule dictates only one thing.
 
 ## TODO
 
-- [ ] - Should rework on rules. Keeping in mind that one rule should only dictate one thing.
+- [ ] Should rework on rules. Keeping in mind that one rule should only dictate one thing.
 
 ## Table of Contents
 
