@@ -1,5 +1,7 @@
 # ESLint TypeScript Selectors
 
+Make sure one rule dictates only one thing.
+
 ## Table of Contents
 
 - [Core JavaScript Selectors](#core-javascript-selectors)
