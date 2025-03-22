@@ -6,8 +6,7 @@ import { ESLintUtils } from "@typescript-eslint/utils";
 import { RuleTester, RuleTesterConfig } from "@typescript-eslint/rule-tester";
 import * as vitest from "vitest";
 
-import tseslint from "typescript-eslint";
-import babelEslintParser from "@babel/eslint-parser";
+import typescriptEslintParser from "@typescript-eslint/parser";
 
 RuleTester.afterAll = vitest.afterAll;
 RuleTester.it = vitest.it;
@@ -28,17 +27,12 @@ export const createRuleTester = (testerConfig?: RuleTesterConfig) =>
   new RuleTester(
     testerConfig ?? {
       languageOptions: {
-        parser: babelEslintParser,
+        parser: typescriptEslintParser,
         parserOptions: {
-          projectService: true,
+          ecmaVersion: "latest",
+          sourceType: "module",
           ecmaFeatures: {
             jsx: true,
-          },
-          ecmaVersion: 11,
-          sourceType: "module",
-          requireConfigFile: false,
-          babelOptions: {
-            presets: ["@babel/preset-react", "@babel/preset-typescript"],
           },
         },
       },
