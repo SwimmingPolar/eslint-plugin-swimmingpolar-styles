@@ -3,25 +3,23 @@
     "declaration": true,
     "module": "NodeNext",
     "target": "ESNext",
-    "outDir": "lib",
+    "outDir": "libs",
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "moduleResolution": "nodenext",
-    "allowJs": true,
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
       "@/test": ["test/*"],
-      "@/*": ["libs/*"]
+      "@/*": ["src/*"]
     },
     "resolveJsonModule": true,
     "sourceMap": true,
     "noEmit": true,
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["libs", "test"]
+  "include": ["src/**/*.tsx"]
 }
