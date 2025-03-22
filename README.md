@@ -1,5 +1,13 @@
 # ESLint TypeScript Selectors
 
+## Table of Contents
+
+- [Core JavaScript Selectors](#core-javascript-selectors)
+- [TypeScript Specific Selectors](#typescript-specific-selectors)
+- [JSX Selectors](#jsx-selectors)
+
+## Core JavaScript Selectors
+
 ### Expressions
 
 | Selector                   | Type                                              |
