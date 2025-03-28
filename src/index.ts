@@ -5,6 +5,11 @@ const { name, version } = JSON.parse(
   fs.readFileSync(new URL("../package.json", import.meta.url), "utf8"),
 ) as { name: string; version: string };
 
+const isUndefinedOrEmpty = (value) => value === undefined || value === "";
+if (isUndefinedOrEmpty(name) || isUndefinedOrEmpty(version)) {
+  throw new Error("Please check package.json file. We need correct name and version")
+}
+
 const plugin = {
   configs: {
     get recommended() {
